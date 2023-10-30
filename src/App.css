@@ -28,13 +28,13 @@
   height: 50px;
   width: 45px;
   border: 2px solid black;
-  background-color: black;
+  background-color: burlywood;
 }
 .grip {
   height: 90px;
   width: 45px;
   border: 2px solid black;
-  background-color: burlywood;
+  background-color: black;
 }
 .pommel {
   height: 20px;
