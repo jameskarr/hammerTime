@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+.theHammer {
+  border: 2px solid grey;
+  display: inline-block;
+  width: 50vw;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.upperHammer {
+  display: flex;
+  justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cups {
+  height: 100px;
+  width: 45px;
+  border: 2px solid black;
+  background-color: silver;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.head {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  background-color: silver;
+}
+.lowerHammer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.shaft {
+  height: 50px;
+  width: 45px;
+  border: 2px solid black;
+  background-color: black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grip {
+  height: 90px;
+  width: 45px;
+  border: 2px solid black;
+  background-color: burlywood;
+}
+.pommel {
+  height: 20px;
+  width: 45px;
+  border: 2px solid black;
+  background-color: silver;
 }
