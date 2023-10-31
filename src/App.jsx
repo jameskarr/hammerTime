@@ -31,27 +31,27 @@ const HammerTime = () => {
 //alphabetical
   const colorOptions = [
     { name: "Standard", value: "" },
-    { name: "Marble", value: "#F0E9D6" },
-    { name: "Gold", value: "#FFD700" },
-    { name: "Silver", value: "#c0c0c0" },
-    { name: "Copper", value: "#B87333" },
     { name: "Black", value: "#000000" },
-    { name: "Silk Black", value: "#46494A" },
-    { name: "Brown", value: "#964B00" },
-    { name: "White", value: "#FFFFFF" },
-    { name: "Red", value: "#ff0000" },
-    { name: "Merlot", value: "#7F171F" },
+    { name: "Black Silk", value: "#46494A" },
     { name: "Blue", value: "#0000FF" },
-    { name: "Silk Blue", value: "#488AC7" },
+    { name: "Blue Silk", value: "#488AC7" },
+    { name: "Bone (tan/natural)", value: "#e3dac9" },
+    { name: "Brown", value: "#964B00" },
+    { name: "Copper", value: "#B87333" },
+    { name: "Gold", value: "#FFD700" },
     { name: "Grey", value: "#B9B5AB" },
-    { name: "Olive/Army Green", value: "#808000" },
-    { name: "Pink", value: "#FFC0CB" },
-    { name: "Silk Pink", value: "#FFCBD6" },
     { name: "Magenta", value: "#FF00FF" },
-    { name: "Yellow", value: "#FFFF00" },
-    { name: "Purple", value: "#800080" },
+    { name: "Marble", value: "#F0E9D6" },
+    { name: "Merlot", value: "#7F171F" },
+    { name: "Olive/Army Green", value: "#808000" },
     { name: "Orange", value: "#FFA500" },
-    { name: "Bone (tan/natural)", value: "#e3dac9" }
+    { name: "Pink", value: "#FFC0CB" },
+    { name: "Pink Silk", value: "#FFCBD6" },
+    { name: "Purple", value: "#800080" },
+    { name: "Red", value: "#ff0000" },
+    { name: "Silver", value: "#c0c0c0" },
+    { name: "White", value: "#FFFFFF" },
+    { name: "Yellow", value: "#FFFF00" }
   ]
 
   return (
