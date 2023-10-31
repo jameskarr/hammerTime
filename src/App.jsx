@@ -29,31 +29,30 @@ const HammerTime = () => {
     setPommelColor(e.target.value)
   }
 
-  const colorOptions = ['', 'Marble', 'Gold', 'Silver', 'Copper', 'Black', 'Silk Black', 'Brown', 'White', 'Red', 'Merlot', 'Blue', 'Silk Blue', 'Grey', 'Olive/Army Green', 'Pink', 'Silk Pink', 'Magenta', 'Yellow', 'Purple', 'Orange', 'Bone (tan/natural)']
-  // [
-  //   { name: "Standard", value: "" },
-  //   { name: "Marble", value: "" },
-  //   { name: "Gold", value: "" },
-  //   { name: "Silver", value: "#c0c0c0" },
-  //   { name: "Copper", value: "" },
-  //   { name: "Black", value: "#000000" },
-  //   { name: "Silk Black", value: "" },
-  //   { name: "Brown", value: "" },
-  //   { name: "White", value: "" },
-  //   { name: "Red", value: "" },
-  //   { name: "Merlot", value: "" },
-  //   { name: "Blue", value: "" },
-  //   { name: "Silk Blue", value: "" },
-  //   { name: "Grey", value: "" },
-  //   { name: "Olive/Army Green", value: "" },
-  //   { name: "Pink", value: "" },
-  //   { name: "Silk Pink", value: "" },
-  //   { name: "Magenta", value: "" },
-  //   { name: "Yellow", value: "" },
-  //   { name: "Purple", value: "" },
-  //   { name: "Orange", value: "" },
-  //   { name: "Bone (tan/natural)", value: "" }
-  // ]
+  const colorOptions = [
+    { name: "Standard", value: "" },
+    { name: "Marble", value: "#F0E9D6" },
+    { name: "Gold", value: "#FFD700" },
+    { name: "Silver", value: "#c0c0c0" },
+    { name: "Copper", value: "#B87333" },
+    { name: "Black", value: "#000000" },
+    { name: "Silk Black", value: "#46494A" },
+    { name: "Brown", value: "#964B00" },
+    { name: "White", value: "#FFFFFF" },
+    { name: "Red", value: "#ff0000" },
+    { name: "Merlot", value: "#7F171F" },
+    { name: "Blue", value: "#0000FF" },
+    { name: "Silk Blue", value: "#488AC7" },
+    { name: "Grey", value: "#B9B5AB" },
+    { name: "Olive/Army Green", value: "#808000" },
+    { name: "Pink", value: "#FFC0CB" },
+    { name: "Silk Pink", value: "#FFCBD6" },
+    { name: "Magenta", value: "#FF00FF" },
+    { name: "Yellow", value: "#FFFF00" },
+    { name: "Purple", value: "#800080" },
+    { name: "Orange", value: "#FFA500" },
+    { name: "Bone (tan/natural)", value: "#e3dac9" }
+  ]
 
   return (
     <div>
@@ -64,45 +63,45 @@ const HammerTime = () => {
 
         <label htmlFor="head">Head:</label>
           <select id="head" onChange={handleHeadChange}>
-          {colorOptions.map((color, index) => (
-            <option key={index} value={color}>
-              {color || "Standard"}
+          {colorOptions.map((option, index) => (
+            <option key={index} value={option.value}>
+              {option.name}
             </option>
           ))}
           </select>
 
         <label htmlFor="cups">Cups:</label>
           <select id="cups" onChange={handleCupChange}>
-          {colorOptions.map((color, index) => (
-            <option key={index} value={color}>
-              {color || "Standard"}
+          {colorOptions.map((option, index) => (
+            <option key={index} value={option.value}>
+              {option.name}
             </option>
           ))}
           </select>
 
         <label htmlFor="cups">Shaft:</label>
           <select id="cups" onChange={handleShaftChange}>
-          {colorOptions.map((color, index) => (
-            <option key={index} value={color}>
-              {color || "Standard"}
+          {colorOptions.map((option, index) => (
+            <option key={index} value={option.value}>
+              {option.name}
             </option>
           ))}
           </select>
 
         <label htmlFor="cups">Grip:</label>
           <select id="cups" onChange={handleGripChange}>
-          {colorOptions.map((color, index) => (
-            <option key={index} value={color}>
-              {color || "Standard"}
+          {colorOptions.map((option, index) => (
+            <option key={index} value={option.value}>
+              {option.name}
             </option>
           ))}
           </select>
 
         <label htmlFor="cups">Pommel:</label>
           <select id="cups" onChange={handlePommelChange}>
-          {colorOptions.map((color, index) => (
-            <option key={index} value={color}>
-              {color || "Standard"}
+          {colorOptions.map((option, index) => (
+            <option key={index} value={option.value}>
+              {option.name}
             </option>
           ))}
           </select>
