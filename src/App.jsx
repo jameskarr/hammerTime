@@ -28,7 +28,7 @@ const HammerTime = () => {
   const handlePommelChange = (e) => {
     setPommelColor(e.target.value)
   }
-
+//alphabetical
   const colorOptions = [
     { name: "Standard", value: "" },
     { name: "Marble", value: "#F0E9D6" },
