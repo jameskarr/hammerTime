@@ -29,66 +29,86 @@ const HammerTime = () => {
     setPommelColor(e.target.value)
   }
 
+  const colorOptions = ['', 'Marble', 'Gold', 'Silver', 'Copper', 'Black', 'Silk Black', 'Brown', 'White', 'Red', 'Merlot', 'Blue', 'Silk Blue', 'Grey', 'Olive/Army Green', 'Pink', 'Silk Pink', 'Magenta', 'Yellow', 'Purple', 'Orange', 'Bone (tan/natural)']
+  // [
+  //   { name: "Standard", value: "" },
+  //   { name: "Marble", value: "" },
+  //   { name: "Gold", value: "" },
+  //   { name: "Silver", value: "#c0c0c0" },
+  //   { name: "Copper", value: "" },
+  //   { name: "Black", value: "#000000" },
+  //   { name: "Silk Black", value: "" },
+  //   { name: "Brown", value: "" },
+  //   { name: "White", value: "" },
+  //   { name: "Red", value: "" },
+  //   { name: "Merlot", value: "" },
+  //   { name: "Blue", value: "" },
+  //   { name: "Silk Blue", value: "" },
+  //   { name: "Grey", value: "" },
+  //   { name: "Olive/Army Green", value: "" },
+  //   { name: "Pink", value: "" },
+  //   { name: "Silk Pink", value: "" },
+  //   { name: "Magenta", value: "" },
+  //   { name: "Yellow", value: "" },
+  //   { name: "Purple", value: "" },
+  //   { name: "Orange", value: "" },
+  //   { name: "Bone (tan/natural)", value: "" }
+  // ]
+
   return (
     <div>
 
       <h1>Color Selector</h1>
 
       <form>
+
         <label htmlFor="head">Head:</label>
           <select id="head" onChange={handleHeadChange}>
-            <option value="">Select a color</option>
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-            <option value="yellow">Yellow</option>
-            <option value="orange">Orange</option>
+          {colorOptions.map((color, index) => (
+            <option key={index} value={color}>
+              {color || "Standard"}
+            </option>
+          ))}
           </select>
 
         <label htmlFor="cups">Cups:</label>
           <select id="cups" onChange={handleCupChange}>
-            <option value="">Select a color</option>
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-            <option value="yellow">Yellow</option>
-            <option value="orange">Orange</option>
+          {colorOptions.map((color, index) => (
+            <option key={index} value={color}>
+              {color || "Standard"}
+            </option>
+          ))}
           </select>
 
         <label htmlFor="cups">Shaft:</label>
           <select id="cups" onChange={handleShaftChange}>
-            <option value="">Select a color</option>
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-            <option value="yellow">Yellow</option>
-            <option value="orange">Orange</option>
+          {colorOptions.map((color, index) => (
+            <option key={index} value={color}>
+              {color || "Standard"}
+            </option>
+          ))}
           </select>
 
         <label htmlFor="cups">Grip:</label>
           <select id="cups" onChange={handleGripChange}>
-            <option value="">Select a color</option>
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-            <option value="yellow">Yellow</option>
-            <option value="orange">Orange</option>
+          {colorOptions.map((color, index) => (
+            <option key={index} value={color}>
+              {color || "Standard"}
+            </option>
+          ))}
           </select>
 
         <label htmlFor="cups">Pommel:</label>
           <select id="cups" onChange={handlePommelChange}>
-            <option value="">Select a color</option>
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-            <option value="yellow">Yellow</option>
-            <option value="orange">Orange</option>
+          {colorOptions.map((color, index) => (
+            <option key={index} value={color}>
+              {color || "Standard"}
+            </option>
+          ))}
           </select>
 
           <button type="submit">Reset</button>
       </form>
-
-     
 
       <div className='theHammer'>
         <div className='upperHammer'>

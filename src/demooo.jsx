@@ -130,52 +130,166 @@
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 
-const ColorForm = () => {
-  const [selectedColor, setSelectedColor] = useState('');
-  const [submittedColor, setSubmittedColor] = useState('');
+// const ColorForm = () => {
+//   const [selectedColor, setSelectedColor] = useState('');
+//   const [submittedColor, setSubmittedColor] = useState('');
 
-  const handleColorChange = (e) => {
-    setSelectedColor(e.target.value);
-  };
+//   const handleColorChange = (e) => {
+//     setSelectedColor(e.target.value);
+//   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmittedColor(selectedColor);
-  };
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     setSubmittedColor(selectedColor);
+//   };
 
-  return (
-    <div>
-      <h2>Color Selector</h2>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="color">Select a color:</label>
-        <select id="color" value={selectedColor} onChange={handleColorChange}>
-          <option value="">Select a color</option>
-          <option value="red">Red</option>
-          <option value="blue">Blue</option>
-          <option value="green">Green</option>
-          <option value="yellow">Yellow</option>
-          <option value="orange">Orange</option>
-        </select>
+//   return (
+//     <div>
+//       <h2>Color Selector</h2>
+//       <form onSubmit={handleSubmit}>
+//         <label htmlFor="color">Select a color:</label>
+//         <select id="color" value={selectedColor} onChange={handleColorChange}>
+//           <option value="">Select a color</option>
+//           <option value="red">Red</option>
+//           <option value="blue">Blue</option>
+//           <option value="green">Green</option>
+//           <option value="yellow">Yellow</option>
+//           <option value="orange">Orange</option>
+//         </select>
 
-        <button type="submit">Submit</button>
-      </form>
+//         <button type="submit">Submit</button>
+//       </form>
 
-      {submittedColor && (
-        <div>
-          <p>Selected Color: {submittedColor}</p>
-          <div
-            style={{
-              width: '100px',
-              height: '100px',
-              backgroundColor: submittedColor,
-            }}
-          ></div>
-        </div>
-      )}
-    </div>
-  );
-};
+//       {submittedColor && (
+//         <div>
+//           <p>Selected Color: {submittedColor}</p>
+//           <div
+//             style={{
+//               width: '100px',
+//               height: '100px',
+//               backgroundColor: submittedColor,
+//             }}
+//           ></div>
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
 
-export default ColorForm;
+// export default ColorForm;
+
+
+// import { useState } from 'react'
+
+// const HammerTime = () => {
+
+//   const [headColor, setHeadColor] = useState('')
+//   const [cupColor, setCupColor] = useState('')
+
+//   const handleHeadChange = (e) => {
+//     setHeadColor(e.target.value)
+//   }
+
+//   const handleCupChange = (e) => {
+//     setCupColor(e.target.value)
+//   }
+
+
+//   return (
+//     <div>
+
+//       <h1>Color Selector</h1>
+
+//       <form>
+//         <label htmlFor="head">Head:</label>
+//           <select id="head" onChange={handleHeadChange}>
+//             <option value="">Select a color</option>
+//             <option value="red">Red</option>
+//             <option value="blue">Blue</option>
+//             <option value="green">Green</option>
+//             <option value="yellow">Yellow</option>
+//             <option value="orange">Orange</option>
+//           </select>
+
+//         <label htmlFor="cups">Cups:</label>
+//           <select id="cups" onChange={handleCupChange}>
+//             <option value="">Select a color</option>
+//             <option value="red">Red</option>
+//             <option value="blue">Blue</option>
+//             <option value="green">Green</option>
+//             <option value="yellow">Yellow</option>
+//             <option value="orange">Orange</option>
+//           </select>
+
+//       </form>
+
+//       <div className='theHammer'>
+//           <div className="cups" style={{backgroundColor: cupColor}}></div>
+//           <div className="head" style={{backgroundColor: headColor}}></div>
+//       </div>
+
+//     </div>
+//   )
+
+// }
+// export default HammerTime
+
+// import { useState } from 'react';
+
+// const HammerTime = () => {
+//   const [headColor, setHeadColor] = useState('');
+//   const [cupColor, setCupColor] = useState('');
+
+//   const handleHeadChange = (e) => {
+//     setHeadColor(e.target.value);
+//   };
+
+//   const handleCupChange = (e) => {
+//     setCupColor(e.target.value);
+//   };
+
+//   // Updated color options with color names and unique hex values
+//   const colorOptions = [
+//     { name: "Select a color", value: "" },
+//     { name: "Red", value: "#ff0000" },
+//     { name: "Blue", value: "#0000ff" },
+//     { name: "Green", value: "#008000" },
+//     { name: "Yellow", value: "#ffff00" },
+//     { name: "Orange", value: "#ffa500" }
+//   ];
+
+//   return (
+//     <div>
+//       <h1>Color Selector</h1>
+
+//       <form>
+//         <label htmlFor="head">Head:</label>
+//         <select id="head" onChange={handleHeadChange}>
+//           {colorOptions.map((option, index) => (
+//             <option key={index} value={option.value}>
+//               {option.name}
+//             </option>
+//           ))}
+//         </select>
+
+//         <label htmlFor="cups">Cups:</label>
+//         <select id="cups" onChange={handleCupChange}>
+//           {colorOptions.map((option, index) => (
+//             <option key={index} value={option.value}>
+//               {option.name}
+//             </option>
+//           ))}
+//         </select>
+//       </form>
+
+//       <div className='theHammer'>
+//         <div className="cups" style={{ backgroundColor: cupColor }}></div>
+//         <div className="head" style={{ backgroundColor: headColor }}></div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default HammerTime;
