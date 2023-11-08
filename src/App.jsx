@@ -55,58 +55,67 @@ const HammerTime = () => {
   ]
 
   return (
-    <div>
-
-      <h1>Color Selector</h1>
+    <div className='container'>
 
       <form>
 
-        <label htmlFor="head">Head:</label>
-          <select id="head" onChange={handleHeadChange}>
-          {colorOptions.map((option, index) => (
-            <option key={index} value={option.value}>
-              {option.name}
+        <button type="submit">Reset</button>
+
+        <div className='userSelection'>
+          <label>Head:</label>
+          <select onChange={handleHeadChange}>
+          {colorOptions.map((el, index) => (
+            <option key={index} value={el.value}>
+              {el.name}
             </option>
           ))}
           </select>
+        </div>
 
-        <label htmlFor="cups">Cups:</label>
-          <select id="cups" onChange={handleCupChange}>
-          {colorOptions.map((option, index) => (
-            <option key={index} value={option.value}>
-              {option.name}
+        <div className='userSelection'>
+          <label>Cups:</label>
+          <select onChange={handleCupChange}>
+          {colorOptions.map((el, index) => (
+            <option key={index} value={el.value}>
+              {el.name}
             </option>
           ))}
           </select>
+        </div>
 
-        <label htmlFor="cups">Shaft:</label>
-          <select id="cups" onChange={handleShaftChange}>
-          {colorOptions.map((option, index) => (
-            <option key={index} value={option.value}>
-              {option.name}
+        <div className='userSelection'>
+          <label>Shaft:</label>
+          <select onChange={handleShaftChange}>
+          {colorOptions.map((el, index) => (
+            <option key={index} value={el.value}>
+              {el.name}
             </option>
           ))}
           </select>
+        </div>
 
-        <label htmlFor="cups">Grip:</label>
-          <select id="cups" onChange={handleGripChange}>
-          {colorOptions.map((option, index) => (
-            <option key={index} value={option.value}>
-              {option.name}
+        <div className='userSelection'>
+          <label>Grip:</label>
+          <select onChange={handleGripChange}>
+          {colorOptions.map((el, index) => (
+            <option key={index} value={el.value}>
+              {el.name}
             </option>
           ))}
           </select>
+        </div>
 
-        <label htmlFor="cups">Pommel:</label>
-          <select id="cups" onChange={handlePommelChange}>
-          {colorOptions.map((option, index) => (
-            <option key={index} value={option.value}>
-              {option.name}
+        <div className='userSelection'>
+          <label>Pommel:</label>
+          <select onChange={handlePommelChange}>
+          {colorOptions.map((el, index) => (
+            <option key={index} value={el.value}>
+              {el.name}
             </option>
           ))}
           </select>
+        </div>
 
-          <button type="submit">Reset</button>
       </form>
 
       <div className='theHammer'>
@@ -126,4 +135,5 @@ const HammerTime = () => {
   )
 
 }
+
 export default HammerTime
