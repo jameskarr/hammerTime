@@ -3,11 +3,13 @@ import { useState } from 'react'
 
 const HammerTime = () => {
 
-  const [headColor, setHeadColor] = useState('')
-  const [cupColor, setCupColor] = useState('')
-  const [shaftColor, setShaftColor] = useState('')
-  const [gripColor, setGripColor] = useState('')
-  const [pommelColor, setPommelColor] = useState('')
+  const defaultColor = ''
+
+  const [headColor, setHeadColor] = useState(defaultColor)
+  const [cupColor, setCupColor] = useState(defaultColor)
+  const [shaftColor, setShaftColor] = useState(defaultColor)
+  const [gripColor, setGripColor] = useState(defaultColor)
+  const [pommelColor, setPommelColor] = useState(defaultColor)
 
   const handleHeadChange = (e) => {
     setHeadColor(e.target.value)
@@ -30,7 +32,7 @@ const HammerTime = () => {
   }
 //alphabetical
   const colorOptions = [
-    { name: "Standard", value: "" },
+    { name: "Standard", value: defaultColor },
     { name: "Black", value: "#000000" },
     { name: "Black Silk", value: "#46494A" },
     { name: "Blue", value: "#0000FF" },
@@ -54,16 +56,24 @@ const HammerTime = () => {
     { name: "Yellow", value: "#FFFF00" }
   ]
 
+  const resetColors = () => {
+    setHeadColor(defaultColor)
+    setCupColor(defaultColor)
+    setShaftColor(defaultColor)
+    setGripColor(defaultColor)
+    setPommelColor(defaultColor)
+  }
+
   return (
     <div className='container'>
 
       <form>
 
-        <button type="submit">Reset</button>
+        <button type="button" onClick={resetColors}>Reset</button>
 
         <div className='userSelection'>
           <label>Head:</label>
-          <select onChange={handleHeadChange}>
+          <select onChange={handleHeadChange} value={headColor}>
           {colorOptions.map((el, index) => (
             <option key={index} value={el.value}>
               {el.name}
@@ -74,7 +84,7 @@ const HammerTime = () => {
 
         <div className='userSelection'>
           <label>Cups:</label>
-          <select onChange={handleCupChange}>
+          <select onChange={handleCupChange} value={cupColor}>
           {colorOptions.map((el, index) => (
             <option key={index} value={el.value}>
               {el.name}
@@ -85,7 +95,7 @@ const HammerTime = () => {
 
         <div className='userSelection'>
           <label>Shaft:</label>
-          <select onChange={handleShaftChange}>
+          <select onChange={handleShaftChange} value={shaftColor}>
           {colorOptions.map((el, index) => (
             <option key={index} value={el.value}>
               {el.name}
@@ -96,7 +106,7 @@ const HammerTime = () => {
 
         <div className='userSelection'>
           <label>Grip:</label>
-          <select onChange={handleGripChange}>
+          <select onChange={handleGripChange} value={gripColor}>
           {colorOptions.map((el, index) => (
             <option key={index} value={el.value}>
               {el.name}
@@ -107,7 +117,7 @@ const HammerTime = () => {
 
         <div className='userSelection'>
           <label>Pommel:</label>
-          <select onChange={handlePommelChange}>
+          <select onChange={handlePommelChange} value={pommelColor}>
           {colorOptions.map((el, index) => (
             <option key={index} value={el.value}>
               {el.name}
