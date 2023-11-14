@@ -65,82 +65,93 @@ const HammerTime = () => {
   }
 
   return (
+
     <div className='container'>
+      <header>
+        {/* <img></img>
+        <button></button>
+        <button></button>
+        <button></button> */}
+      </header>
 
-      <form>
+      <div className='hammerTime'>
 
-        <h3><a href='https://www.etsy.com/listing/977244025/hammer-dice-tower-and-vault-dice-storage?variation0=1878384953'>Etsy link</a></h3>
+        <form>
 
-        <button type="button" onClick={resetColors}>Reset</button>
+          <h3><a href='https://www.etsy.com/listing/977244025/hammer-dice-tower-and-vault-dice-storage?variation0=1878384953'>Etsy link</a></h3>
 
-        <div className='userSelection'>
-          <label>Head:</label>
-          <select onChange={handleHeadChange} value={headColor}>
-          {colorOptions.map((el, index) => (
-            <option key={index} value={el.value}>
-              {el.name}
-            </option>
-          ))}
-          </select>
+          <button type="button" onClick={resetColors}>Reset</button>
+
+          <div className='userSelection'>
+            <label>Head:</label>
+            <select onChange={handleHeadChange} value={headColor}>
+            {colorOptions.map((el, index) => (
+              <option key={index} value={el.value}>
+                {el.name}
+              </option>
+            ))}
+            </select>
+          </div>
+
+          <div className='userSelection'>
+            <label>Cups:</label>
+            <select onChange={handleCupChange} value={cupColor}>
+            {colorOptions.map((el, index) => (
+              <option key={index} value={el.value}>
+                {el.name}
+              </option>
+            ))}
+            </select>
+          </div>
+
+          <div className='userSelection'>
+            <label>Shaft:</label>
+            <select onChange={handleShaftChange} value={shaftColor}>
+            {colorOptions.map((el, index) => (
+              <option key={index} value={el.value}>
+                {el.name}
+              </option>
+            ))}
+            </select>
+          </div>
+
+          <div className='userSelection'>
+            <label>Grip:</label>
+            <select onChange={handleGripChange} value={gripColor}>
+            {colorOptions.map((el, index) => (
+              <option key={index} value={el.value}>
+                {el.name}
+              </option>
+            ))}
+            </select>
+          </div>
+
+          <div className='userSelection'>
+            <label>Pommel:</label>
+            <select onChange={handlePommelChange} value={pommelColor}>
+            {colorOptions.map((el, index) => (
+              <option key={index} value={el.value}>
+                {el.name}
+              </option>
+            ))}
+            </select>
+          </div>
+
+        </form>
+
+        <div className='theHammer'>
+          <div className='upperHammer'>
+            <div className="cups" style={{backgroundColor: cupColor}}></div>
+            <div className="head" style={{backgroundColor: headColor}}></div>
+            <div className="cups" style={{backgroundColor: cupColor}}></div>
+          </div>
+          <div className='lowerHammer'>
+            <div className="shaft" style={{backgroundColor: shaftColor}}></div>
+            <div className="grip" style={{backgroundColor: gripColor}}></div>
+            <div className="pommel" style={{backgroundColor: pommelColor}}></div>
+          </div>
         </div>
 
-        <div className='userSelection'>
-          <label>Cups:</label>
-          <select onChange={handleCupChange} value={cupColor}>
-          {colorOptions.map((el, index) => (
-            <option key={index} value={el.value}>
-              {el.name}
-            </option>
-          ))}
-          </select>
-        </div>
-
-        <div className='userSelection'>
-          <label>Shaft:</label>
-          <select onChange={handleShaftChange} value={shaftColor}>
-          {colorOptions.map((el, index) => (
-            <option key={index} value={el.value}>
-              {el.name}
-            </option>
-          ))}
-          </select>
-        </div>
-
-        <div className='userSelection'>
-          <label>Grip:</label>
-          <select onChange={handleGripChange} value={gripColor}>
-          {colorOptions.map((el, index) => (
-            <option key={index} value={el.value}>
-              {el.name}
-            </option>
-          ))}
-          </select>
-        </div>
-
-        <div className='userSelection'>
-          <label>Pommel:</label>
-          <select onChange={handlePommelChange} value={pommelColor}>
-          {colorOptions.map((el, index) => (
-            <option key={index} value={el.value}>
-              {el.name}
-            </option>
-          ))}
-          </select>
-        </div>
-
-      </form>
-
-      <div className='theHammer'>
-        <div className='upperHammer'>
-          <div className="cups" style={{backgroundColor: cupColor}}></div>
-          <div className="head" style={{backgroundColor: headColor}}></div>
-          <div className="cups" style={{backgroundColor: cupColor}}></div>
-        </div>
-        <div className='lowerHammer'>
-          <div className="shaft" style={{backgroundColor: shaftColor}}></div>
-          <div className="grip" style={{backgroundColor: gripColor}}></div>
-          <div className="pommel" style={{backgroundColor: pommelColor}}></div>
-        </div>
       </div>
 
     </div>
