@@ -4,11 +4,11 @@ body {
 .container {
 
 }
-header {
+/* header {
   background-image: url(https://i.ibb.co/CMDsCBM/old-Paper-Scroll.png);
   background-repeat: round;
   height: 25vh; 
-}
+} */
 .hammerTime {
   display: flex;
   justify-content: space-evenly;
