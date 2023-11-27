@@ -154,6 +154,14 @@ const HammerTime = () => {
 
       </div>
 
+      {/* <textarea>
+        <p name={headColor}></p>
+        <p name={cupColor}></p>
+        <p name={shaftColor}></p>
+        <p name={gripColor}></p>
+        <p name={pommelColor}></p>
+      </textarea> */}
+
     </div>
   )
 
