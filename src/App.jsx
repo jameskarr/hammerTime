@@ -84,8 +84,8 @@ const HammerTime = () => {
     <CssBaseline />
     <Container maxWidth="md">
     {/* <img id="headerAI" src="headerAI.jpg" alt="AIs D&D themed header"></img> */}
-    
-    <a className='logo' href='https://www.etsy.com/listing/977244025/hammer-dice-tower-and-vault-dice-storage?variation0=1878384953'>
+
+    <a className='logo' href='https://www.etsy.com/listing/977244025/hammer-dice-tower-and-vault-dice-storage'>
       <Avatar className='logoBorder' 
       sx={{ width: 100, height: 100 }} 
       variant="rounded" 
