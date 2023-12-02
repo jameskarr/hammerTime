@@ -1,5 +1,19 @@
 import './App.css'
 import { useState } from 'react'
+import CssBaseline from '@mui/material/CssBaseline';
+//import AppBar from '@mui/material/AppBar';
+//import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+//import Toolbar from '@mui/material/Toolbar';
+//import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+//import IconButton from '@mui/material/IconButton';
+//import Paper from '@mui/material/Paper';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+
 
 const HammerTime = () => {
 
@@ -65,104 +79,95 @@ const HammerTime = () => {
   }
 
   return (
+    <>
+    <CssBaseline />
+    <Container maxWidth="md">
+    {/* <img id="headerAI" src="headerAI.jpg" alt="AIs D&D themed header"></img> */}
 
-    <div className='container'>
-      <header>
-        {/* <img></img>
-        <button></button>
-        <button></button>
-        <button></button> */}
-      </header>
+    <div className='bigBox'>
 
-      <div className='hammerTime'>
-
-        <form>
-
-          <h3><a href='https://www.etsy.com/listing/977244025/hammer-dice-tower-and-vault-dice-storage?variation0=1878384953'>Etsy link</a></h3>
-
-          <button type="button" onClick={resetColors}>Reset</button>
-
-          <div className='userSelection'>
-            <label>Head:</label>
-            <select onChange={handleHeadChange} value={headColor}>
-            {colorOptions.map((el, index) => (
-              <option key={index} value={el.value}>
-                {el.name}
-              </option>
-            ))}
-            </select>
-          </div>
-
-          <div className='userSelection'>
-            <label>Cups:</label>
-            <select onChange={handleCupChange} value={cupColor}>
-            {colorOptions.map((el, index) => (
-              <option key={index} value={el.value}>
-                {el.name}
-              </option>
-            ))}
-            </select>
-          </div>
-
-          <div className='userSelection'>
-            <label>Shaft:</label>
-            <select onChange={handleShaftChange} value={shaftColor}>
-            {colorOptions.map((el, index) => (
-              <option key={index} value={el.value}>
-                {el.name}
-              </option>
-            ))}
-            </select>
-          </div>
-
-          <div className='userSelection'>
-            <label>Grip:</label>
-            <select onChange={handleGripChange} value={gripColor}>
-            {colorOptions.map((el, index) => (
-              <option key={index} value={el.value}>
-                {el.name}
-              </option>
-            ))}
-            </select>
-          </div>
-
-          <div className='userSelection'>
-            <label>Pommel:</label>
-            <select onChange={handlePommelChange} value={pommelColor}>
-            {colorOptions.map((el, index) => (
-              <option key={index} value={el.value}>
-                {el.name}
-              </option>
-            ))}
-            </select>
-          </div>
-
-        </form>
-
-        <div className='theHammer'>
-          <div className='upperHammer'>
-            <div className="cups" style={{backgroundColor: cupColor}}></div>
-            <div className="head" style={{backgroundColor: headColor}}></div>
-            <div className="cups" style={{backgroundColor: cupColor}}></div>
-          </div>
-          <div className='lowerHammer'>
-            <div className="shaft" style={{backgroundColor: shaftColor}}></div>
-            <div className="grip" style={{backgroundColor: gripColor}}></div>
-            <div className="pommel" style={{backgroundColor: pommelColor}}></div>
-          </div>
+      <div className='theHammer'>
+        <div className='upperHammer'>
+          <div className="cups" style={{backgroundColor: cupColor}}></div>
+          <div className="head" style={{backgroundColor: headColor}}></div>
+          <div className="cups" style={{backgroundColor: cupColor}}></div>
         </div>
+        <div className='lowerHammer'>
+          <div className="shaft" style={{backgroundColor: shaftColor}}></div>
+          <div className="grip" style={{backgroundColor: gripColor}}></div>
+          <div className="pommel" style={{backgroundColor: pommelColor}}></div>
+        </div>
+      </div>
+      
+
+      <div className='formGalore'>
+
+        <FormControl id='addPad' fullWidth>
+        <InputLabel>Head</InputLabel>
+        <Select sx={{width: '40vw'}} label="Head" value={headColor} onChange={handleHeadChange}>
+          {colorOptions.map((el, index) => (
+              <MenuItem key={index} value={el.value}>
+                {el.name}
+              </MenuItem>
+            ))}
+        </Select>
+        </FormControl>
+
+        <FormControl id='addPad' fullWidth>
+        <InputLabel>Faces</InputLabel>
+        <Select sx={{width: '40vw'}} label="Faces" value={cupColor} onChange={handleCupChange}>
+          {colorOptions.map((el, index) => (
+              <MenuItem key={index} value={el.value}>
+                {el.name}
+              </MenuItem>
+            ))}
+        </Select>
+        </FormControl>
+
+        <FormControl id='addPad' fullWidth>
+        <InputLabel>Shaft</InputLabel>
+        <Select sx={{width: '40vw'}} label="Shaft" value={shaftColor} onChange={handleShaftChange}>
+          {colorOptions.map((el, index) => (
+              <MenuItem key={index} value={el.value}>
+                {el.name}
+              </MenuItem>
+            ))}
+        </Select>
+        </FormControl>
+
+        <FormControl id='addPad' fullWidth>
+        <InputLabel>Grip</InputLabel>
+        <Select sx={{width: '40vw'}} label="Grip" value={gripColor} onChange={handleGripChange}>
+          {colorOptions.map((el, index) => (
+              <MenuItem key={index} value={el.value}>
+                {el.name}
+              </MenuItem>
+            ))}
+        </Select>
+        </FormControl>
+
+        <FormControl id='addPad' fullWidth>
+        <InputLabel>Pommel</InputLabel>
+        <Select sx={{width: '40vw'}} label="Pommel" value={pommelColor} onChange={handlePommelChange}>
+          {colorOptions.map((el, index) => (
+              <MenuItem key={index} value={el.value}>
+                {el.name}
+              </MenuItem>
+            ))}
+        </Select>
+        </FormControl>
+
+        <Button type="button" onClick={resetColors} variant="contained">Reset</Button>
+        
+        <h3><a href='https://www.etsy.com/listing/977244025/hammer-dice-tower-and-vault-dice-storage?variation0=1878384953'>Etsy link</a></h3>
 
       </div>
-
-      {/* <textarea>
-        <p name={headColor}></p>
-        <p name={cupColor}></p>
-        <p name={shaftColor}></p>
-        <p name={gripColor}></p>
-        <p name={pommelColor}></p>
-      </textarea> */}
-
     </div>
+
+
+    
+    </Container>
+    </>
   )
 
 }
