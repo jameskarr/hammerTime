@@ -13,6 +13,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import Avatar from '@mui/material/Avatar';
 
 
 const HammerTime = () => {
@@ -83,6 +84,12 @@ const HammerTime = () => {
     <CssBaseline />
     <Container maxWidth="md">
     {/* <img id="headerAI" src="headerAI.jpg" alt="AIs D&D themed header"></img> */}
+    
+    <a className='logo' href='https://www.etsy.com/listing/977244025/hammer-dice-tower-and-vault-dice-storage?variation0=1878384953'>
+      <Avatar className='logoBorder' 
+      sx={{ width: 100, height: 100 }} 
+      variant="rounded" 
+      src='tojo.png'></Avatar></a>
 
     <div className='bigBox'>
 
@@ -159,13 +166,11 @@ const HammerTime = () => {
 
         <Button type="button" onClick={resetColors} variant="contained">Reset</Button>
         
-        <h3><a href='https://www.etsy.com/listing/977244025/hammer-dice-tower-and-vault-dice-storage?variation0=1878384953'>Etsy link</a></h3>
+        
 
       </div>
     </div>
-
-
-    
+        
     </Container>
     </>
   )

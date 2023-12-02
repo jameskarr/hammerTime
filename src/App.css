@@ -10,6 +10,10 @@ body {
 #headerAI {
   width: inherit;
 }
+.logo {
+}
+.logoBorder {
+}
 .bigBox {
   display: flex;
 }
