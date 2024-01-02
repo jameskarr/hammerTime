@@ -12,4 +12,4 @@ Developed for a small business owner seeking to boost ecommerce sales, this app 
 
 ## Lessons Learned:
 
-This applications offered valuable insight working directly with a client and tailoring solutions to specific business needs.
+Creating this application provided valuable insights by working directly with a client, gaining experience in deadline management, and tailoring solutions to specific business needs with routine feedback.
