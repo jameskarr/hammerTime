@@ -15,39 +15,13 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Avatar from '@mui/material/Avatar';
 
-const defaultColor = ''
-
-//alphabetical
-const colorOptions = [
-  { name: "Standard", value: defaultColor },
-  { name: "Black", value: "#000000" },
-  { name: "Black Silk", value: "#46494A" },
-  { name: "Blue", value: "#0000FF" },
-  { name: "Blue Silk", value: "#488AC7" },
-  { name: "Bone (tan/natural)", value: "#e3dac9" },
-  { name: "Brown", value: "#964B00" },
-  { name: "Copper", value: "#B87333" },
-  { name: "Gold", value: "#FFD700" },
-  { name: "Grey", value: "#B9B5AB" },
-  { name: "Magenta", value: "#FF00FF" },
-  { name: "Marble", value: "#F0E9D6" },
-  { name: "Merlot", value: "#7F171F" },
-  { name: "Olive/Army Green", value: "#808000" },
-  { name: "Orange", value: "#FFA500" },
-  { name: "Pink", value: "#FFC0CB" },
-  { name: "Pink Silk", value: "#FFCBD6" },
-  { name: "Purple", value: "#800080" },
-  { name: "Red", value: "#ff0000" },
-  { name: "Silver", value: "#c0c0c0" },
-  { name: "White", value: "#FFFFFF" },
-  { name: "Yellow", value: "#FFFF00" }
-]
-
 
 const HammerTime = () => {
 
+  const defaultColor = ''
+
   const [headColor, setHeadColor] = useState(defaultColor)
-  const [cupsColor, setCupsColor] = useState(defaultColor)
+  const [cupColor, setCupColor] = useState(defaultColor)
   const [shaftColor, setShaftColor] = useState(defaultColor)
   const [gripColor, setGripColor] = useState(defaultColor)
   const [pommelColor, setPommelColor] = useState(defaultColor)
@@ -56,8 +30,8 @@ const HammerTime = () => {
     setHeadColor(e.target.value)
   }
 
-  const handleCupsChange = (e) => {
-    setCupsColor(e.target.value)
+  const handleCupChange = (e) => {
+    setCupColor(e.target.value)
   }
 
   const handleShaftChange = (e) => {
@@ -71,17 +45,39 @@ const HammerTime = () => {
   const handlePommelChange = (e) => {
     setPommelColor(e.target.value)
   }
+//alphabetical
+  const colorOptions = [
+    { name: "Standard", value: defaultColor },
+    { name: "Black", value: "#000000" },
+    { name: "Black Silk", value: "#46494A" },
+    { name: "Blue", value: "#0000FF" },
+    { name: "Blue Silk", value: "#488AC7" },
+    { name: "Bone (tan/natural)", value: "#e3dac9" },
+    { name: "Brown", value: "#964B00" },
+    { name: "Copper", value: "#B87333" },
+    { name: "Gold", value: "#FFD700" },
+    { name: "Grey", value: "#B9B5AB" },
+    { name: "Magenta", value: "#FF00FF" },
+    { name: "Marble", value: "#F0E9D6" },
+    { name: "Merlot", value: "#7F171F" },
+    { name: "Olive/Army Green", value: "#808000" },
+    { name: "Orange", value: "#FFA500" },
+    { name: "Pink", value: "#FFC0CB" },
+    { name: "Pink Silk", value: "#FFCBD6" },
+    { name: "Purple", value: "#800080" },
+    { name: "Red", value: "#ff0000" },
+    { name: "Silver", value: "#c0c0c0" },
+    { name: "White", value: "#FFFFFF" },
+    { name: "Yellow", value: "#FFFF00" }
+  ]
 
   const resetColors = () => {
     setHeadColor(defaultColor)
-    setCupsColor(defaultColor)
+    setCupColor(defaultColor)
     setShaftColor(defaultColor)
     setGripColor(defaultColor)
     setPommelColor(defaultColor)
   }
-  
-  
-
 
   return (
     <>
@@ -99,9 +95,9 @@ const HammerTime = () => {
 
       <div className='theHammer'>
         <div className='upperHammer'>
-          <div className="cups" style={{backgroundColor: cupsColor}}></div>
+          <div className="cups" style={{backgroundColor: cupColor}}></div>
           <div className="head" style={{backgroundColor: headColor}}></div>
-          <div className="cups" style={{backgroundColor: cupsColor}}></div>
+          <div className="cups" style={{backgroundColor: cupColor}}></div>
         </div>
         <div className='lowerHammer'>
           <div className="shaft" style={{backgroundColor: shaftColor}}></div>
@@ -126,7 +122,7 @@ const HammerTime = () => {
 
         <FormControl id='addPad' fullWidth>
         <InputLabel>Faces</InputLabel>
-        <Select sx={{width: '40vw'}} label="Faces" value={cupsColor} onChange={handleCupsChange}>
+        <Select sx={{width: '40vw'}} label="Faces" value={cupColor} onChange={handleCupChange}>
           {colorOptions.map((el, index) => (
               <MenuItem key={index} value={el.value}>
                 {el.name}
@@ -159,11 +155,7 @@ const HammerTime = () => {
 
         <FormControl id='addPad' fullWidth>
         <InputLabel>Pommel</InputLabel>
-        <Select 
-        sx={{width: '40vw'}} 
-        label="Pommel" 
-        value={pommelColor} 
-        onChange={handlePommelChange}>
+        <Select sx={{width: '40vw'}} label="Pommel" value={pommelColor} onChange={handlePommelChange}>
           {colorOptions.map((el, index) => (
               <MenuItem key={index} value={el.value}>
                 {el.name}
@@ -173,7 +165,9 @@ const HammerTime = () => {
         </FormControl>
 
         <Button type="button" onClick={resetColors} variant="contained">Reset</Button>
-      
+        
+        
+
       </div>
     </div>
         

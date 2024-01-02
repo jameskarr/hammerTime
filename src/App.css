@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: sans-serif;
 }
@@ -50,14 +53,14 @@ select {
 .cups {
   height: 120px;
   width: 60px;
-  border: 2px solid black;
+  border: 2px solid #000000;
   border-radius: 15%;
   background-color: #c0c0c0;
 }
 .head {
   height: 120px;
   width: 120px;
-  border: 2px solid black;
+  border: 2px solid #000000;
   border-radius: 15%;
   background-color: #c0c0c0;
 }
@@ -69,13 +72,13 @@ select {
 .shaft {
   height: 65px;
   width: 60px;
-  border: 2px solid black;
+  border: 2px solid #000000;
   background-color: #964B00;
 }
 .grip {
   height: 115px;
   width: 60px;
-  border: 2px solid black;
+  border: 2px solid #000000;
   background-color: #000000;
 }
 .pommel {
