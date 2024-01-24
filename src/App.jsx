@@ -8,6 +8,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Avatar from '@mui/material/Avatar';
+import Link from '@mui/material/Link';
 
 
 //alphabetical
@@ -19,21 +20,21 @@ const colorOptions = [
   { name: "Blue Silk", value: "#488AC7" },
   { name: "Bone (tan/natural)", value: "#e3dac9" },
   { name: "Brown", value: "#964B00" },
-  { name: "Copper", value: "#B87333" },
-  { name: "Gold", value: "#FFD700" },
+  { name: "Copper", value: "#c85f39" },
+  { name: "Gold", value: "#b99832" },
   { name: "Grey", value: "#B9B5AB" },
-  { name: "Magenta", value: "#FF00FF" },
+  { name: "Magenta", value: "#922341" },
   { name: "Marble", value: "#F0E9D6" },
   { name: "Merlot", value: "#7F171F" },
-  { name: "Olive/Army Green", value: "#808000" },
-  { name: "Orange", value: "#FFA500" },
+  { name: "Olive/Army Green", value: "#655f2e" },
+  { name: "Orange", value: "#ff5508" },
   { name: "Pink", value: "#FFC0CB" },
   { name: "Pink Silk", value: "#FFCBD6" },
   { name: "Purple", value: "#800080" },
   { name: "Red", value: "#ff0000" },
   { name: "Silver", value: "#c0c0c0" },
   { name: "White", value: "#FFFFFF" },
-  { name: "Yellow", value: "#FFFF00" }
+  { name: "Yellow", value: "#f7d800" }
 ]
 
 
@@ -63,11 +64,12 @@ const HammerTime = () => {
     <Container maxWidth="md">
     {/* <img id="headerAI" src="headerAI.jpg" alt="AIs D&D themed header"></img> */}
 
-    <a className='logo' href='https://www.etsy.com/listing/977244025/hammer-dice-tower-and-vault-dice-storage'>
+    <Link className='logo' href='https://www.etsy.com/listing/977244025/hammer-dice-tower-and-vault-dice-storage'>
       <Avatar className='logoBorder' 
       sx={{ width: 100, height: 100 }} 
       variant="rounded" 
-      src='tojo.png'></Avatar></a>
+      src='tojo.png'></Avatar>
+      </Link>
 
     <div className='bigBox'>
 
