@@ -7,8 +7,6 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import Avatar from '@mui/material/Avatar';
-import Link from '@mui/material/Link';
 
 
 //alphabetical
@@ -62,14 +60,8 @@ const HammerTime = () => {
     <>
     <CssBaseline />
     <Container maxWidth="md">
-    {/* <img id="headerAI" src="headerAI.jpg" alt="AIs D&D themed header"></img> */}
 
-    <Link className='logo' href='https://www.etsy.com/listing/977244025/hammer-dice-tower-and-vault-dice-storage'>
-      <Avatar className='logoBorder' 
-      sx={{ width: 100, height: 100 }} 
-      variant="rounded" 
-      src='tojo.png'></Avatar>
-      </Link>
+    <a href='https://www.etsy.com/listing/977244025/hammer-dice-tower-and-vault-dice-storage'><img className='logo' src='tojo.png'></img></a>
 
     <div className='bigBox'>
 
@@ -81,7 +73,7 @@ const HammerTime = () => {
         </div>
         <div className='lowerHammer'>
           <div className="shaft" style={{backgroundColor: shaftColor}}></div>
-          <div className="grip" style={{backgroundColor: gripColor}}></div>
+          <img src='grip.png' className="grip" style={{backgroundColor: gripColor}}></img>
           <div className="pommel" style={{backgroundColor: pommelColor}}></div>
         </div>
       </div>
@@ -89,9 +81,13 @@ const HammerTime = () => {
 
       <div className='formGalore'>
 
-        <FormControl id='addPad' fullWidth>
+        <FormControl id='addPad'>
         <InputLabel>Head</InputLabel>
-        <Select sx={{width: '40vw'}} label="Head" value={headColor} onChange={handleColorChange(setHeadColor)}>
+        <Select
+        sx={{width: '40vw'}}
+        label="Head"
+        value={headColor}
+        onChange={handleColorChange(setHeadColor)}>
           {colorOptions.map((el, index) => (
               <MenuItem key={index} value={el.value}>
                 {el.name}
@@ -100,9 +96,13 @@ const HammerTime = () => {
         </Select>
         </FormControl>
 
-        <FormControl id='addPad' fullWidth>
+        <FormControl id='addPad'>
         <InputLabel>Faces</InputLabel>
-        <Select sx={{width: '40vw'}} label="Faces" value={cupsColor} onChange={handleColorChange(setCupsColor)}>
+        <Select
+        sx={{width: '40vw'}}
+        label="Faces"
+        value={cupsColor}
+        onChange={handleColorChange(setCupsColor)}>
           {colorOptions.map((el, index) => (
               <MenuItem key={index} value={el.value}>
                 {el.name}
@@ -111,9 +111,13 @@ const HammerTime = () => {
         </Select>
         </FormControl>
 
-        <FormControl id='addPad' fullWidth>
+        <FormControl id='addPad'>
         <InputLabel>Shaft</InputLabel>
-        <Select sx={{width: '40vw'}} label="Shaft" value={shaftColor} onChange={handleColorChange(setShaftColor)}>
+        <Select
+        sx={{width: '40vw'}}
+        label="Shaft"
+        value={shaftColor}
+        onChange={handleColorChange(setShaftColor)}>
           {colorOptions.map((el, index) => (
               <MenuItem key={index} value={el.value}>
                 {el.name}
@@ -122,9 +126,13 @@ const HammerTime = () => {
         </Select>
         </FormControl>
 
-        <FormControl id='addPad' fullWidth>
+        <FormControl id='addPad'>
         <InputLabel>Grip</InputLabel>
-        <Select sx={{width: '40vw'}} label="Grip" value={gripColor} onChange={handleColorChange(setGripColor)}>
+        <Select
+        sx={{width: '40vw'}}
+        label="Grip"
+        value={gripColor}
+        onChange={handleColorChange(setGripColor)}>
           {colorOptions.map((el, index) => (
               <MenuItem key={index} value={el.value}>
                 {el.name}
@@ -151,7 +159,10 @@ const HammerTime = () => {
         <Button type="button" onClick={resetColors} variant="contained">Reset</Button>
       
       </div>
+
     </div>
+
+    <p>**The Standard is a Silver Head and Faces, Brown Shaft, Black Grip, Silver Pommel**</p>
         
     </Container>
     </>

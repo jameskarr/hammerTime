@@ -4,47 +4,18 @@
 body {
   font-family: sans-serif;
 }
-.container {
-
+.logo {
+  height: 125px;
+  width: 125px;
 }
 #addPad {
-  margin: 10px;
-}
-#headerAI {
-  width: inherit;
-}
-.logo {
-}
-.logoBorder {
+  margin: 5px;
 }
 .bigBox {
   display: flex;
 }
-.hammerTime {
-  display: flex;
-}
-form {
-  padding: 1rem;
-  width: 30vw;
-  /* border: 2px solid red; */
-}
-button {
-  
-}
-.userSelection {
-  /* display: flex;
-  justify-content: flex-end; */
-  padding: 1rem 0 0 0;
-}
-label {
-  /* border: 2px solid orange; */
-}
-select {
-  /* border: 2px solid purple; */
-}
 .theHammer {
   padding: 1rem;
-  /* border: 2px solid green; */
 }
 .upperHammer {
   display: flex;
