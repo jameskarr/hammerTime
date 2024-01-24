@@ -61,7 +61,7 @@ const HammerTime = () => {
     <CssBaseline />
     <Container maxWidth="md">
 
-    <a href='https://www.etsy.com/listing/977244025/hammer-dice-tower-and-vault-dice-storage'><img className='logo' src='tojo.png'></img></a>
+    <a href='https://www.etsy.com/listing/977244025/hammer-dice-tower-and-vault-dice-storage'><img className='logo' src='tojo.png' alt='togo logo'></img></a>
 
     <div className='bigBox'>
 
@@ -73,7 +73,7 @@ const HammerTime = () => {
         </div>
         <div className='lowerHammer'>
           <div className="shaft" style={{backgroundColor: shaftColor}}></div>
-          <img src='grip.png' className="grip" style={{backgroundColor: gripColor}}></img>
+          <img src='grip.png' className="grip" alt='grip' style={{backgroundColor: gripColor}}></img>
           <div className="pommel" style={{backgroundColor: pommelColor}}></div>
         </div>
       </div>
