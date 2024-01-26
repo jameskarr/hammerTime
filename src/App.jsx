@@ -66,9 +66,9 @@ const HammerTime = () => {
 
       <div className='theHammer'>
         <div className='upperHammer'>
-          <img src='cupL.png' className='cups' style={{backgroundColor: cupsColor}}></img>
+          <img src='cupL.png' className='cups' alt='cups' style={{backgroundColor: cupsColor}}></img>
           <div className="head" style={{backgroundColor: headColor}}></div>
-          <img src='cupR.png' className='cups' style={{backgroundColor: cupsColor}}></img>
+          <img src='cupR.png' className='cups' alt='cups' style={{backgroundColor: cupsColor}}></img>
         </div>
         <div className='lowerHammer'>
           <div className="shaft" style={{backgroundColor: shaftColor}}></div>
