@@ -73,7 +73,7 @@ const HammerTime = () => {
         <div className='lowerHammer'>
           <div className="shaft" style={{backgroundColor: shaftColor}}></div>
           <img src='grip.png' className="grip" alt='grip' style={{backgroundColor: gripColor}}></img>
-          <div className="pommel" style={{backgroundColor: pommelColor}}></div>
+          <img src='pommel.png' className="pommel" alt='pommel' style={{backgroundColor: pommelColor}}></img>
         </div>
       </div>
       
