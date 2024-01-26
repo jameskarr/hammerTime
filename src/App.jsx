@@ -35,7 +35,6 @@ const colorOptions = [
   { name: "Yellow", value: "#f7d800" }
 ]
 
-
 const HammerTime = () => {
 
   const [headColor, setHeadColor] = useState('')
