@@ -4,7 +4,7 @@ Developed for a small business owner seeking to boost ecommerce sales, this app 
 
 **Link to project:** [https://itshammertime.netlify.app/]
 
-![alt tag](https://i.ibb.co/bKQ14MJ/hammer-Time-Vid.gif)
+![alt tag](https://i.ibb.co/f1JkyTY/hammer-Time-Vid.gif)
 
 ## How It's Made:
 
