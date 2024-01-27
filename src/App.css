@@ -9,7 +9,8 @@ body {
   width: 125px;
 }
 #addPad {
-  margin: 5px;
+  margin: 2px;
+  transform: scale(.90);
 }
 .bigBox {
   display: flex;

@@ -1,3 +1,4 @@
+//npm start
 import './App.css'
 import { useState } from 'react'
 import CssBaseline from '@mui/material/CssBaseline';
@@ -75,15 +76,14 @@ const HammerTime = () => {
           <img src='grip.png' className="grip" alt='grip' style={{backgroundColor: gripColor}}></img>
           <img src='pommel.png' className="pommel" alt='pommel' style={{backgroundColor: pommelColor}}></img>
         </div>
-      </div>
-      
+      </div>      
 
       <div className='formGalore'>
 
         <FormControl id='addPad'>
         <InputLabel>Head</InputLabel>
         <Select
-        sx={{width: '40vw'}}
+        sx={{width: '20vw'}}
         label="Head"
         value={headColor}
         onChange={handleColorChange(setHeadColor)}>
@@ -94,11 +94,12 @@ const HammerTime = () => {
             ))}
         </Select>
         </FormControl>
+        <br></br>
 
         <FormControl id='addPad'>
         <InputLabel>Faces</InputLabel>
         <Select
-        sx={{width: '40vw'}}
+        sx={{width: '20vw'}}
         label="Faces"
         value={cupsColor}
         onChange={handleColorChange(setCupsColor)}>
@@ -109,11 +110,12 @@ const HammerTime = () => {
             ))}
         </Select>
         </FormControl>
+        <br></br>
 
         <FormControl id='addPad'>
         <InputLabel>Shaft</InputLabel>
         <Select
-        sx={{width: '40vw'}}
+        sx={{width: '20vw'}}
         label="Shaft"
         value={shaftColor}
         onChange={handleColorChange(setShaftColor)}>
@@ -124,11 +126,12 @@ const HammerTime = () => {
             ))}
         </Select>
         </FormControl>
+        <br></br>
 
         <FormControl id='addPad'>
         <InputLabel>Grip</InputLabel>
         <Select
-        sx={{width: '40vw'}}
+        sx={{width: '20vw'}}
         label="Grip"
         value={gripColor}
         onChange={handleColorChange(setGripColor)}>
@@ -139,11 +142,12 @@ const HammerTime = () => {
             ))}
         </Select>
         </FormControl>
+        <br></br>
 
-        <FormControl id='addPad' fullWidth>
+        <FormControl id='addPad'>
         <InputLabel>Pommel</InputLabel>
         <Select 
-        sx={{width: '40vw'}} 
+        sx={{width: '20vw'}} 
         label="Pommel" 
         value={pommelColor} 
         onChange={handleColorChange(setPommelColor)}>
@@ -154,7 +158,7 @@ const HammerTime = () => {
             ))}
         </Select>
         </FormControl>
-
+        <br></br>
         <Button type="button" onClick={resetColors} variant="contained">Reset</Button>
       
       </div>
