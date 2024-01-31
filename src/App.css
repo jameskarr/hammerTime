@@ -16,7 +16,6 @@ body {
   display: flex;
 }
 .theHammer {
-  padding: 1rem;
 }
 .upperHammer {
   display: flex;
@@ -60,7 +59,12 @@ body {
   border-radius: 0 0 15% 15%;
   background-color: #c0c0c0;
 }
-
+.formGalore {
+  min-width: 100px;
+}
+.addThis {
+  width: 300px;
+}
 #about {
   font-weight: bold;
   padding: 1rem;
