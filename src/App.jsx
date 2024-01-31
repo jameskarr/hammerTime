@@ -8,6 +8,8 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 
 //alphabetical
@@ -35,6 +37,28 @@ const colorOptions = [
   { name: "White", value: "#FFFFFF" },
   { name: "Yellow", value: "#f7d800" }
 ]
+
+
+const images = [
+  {
+    original: "https://i.ibb.co/K2SRrTh/hammers1.jpg"
+  },
+  {
+    original: "https://i.ibb.co/NSyJDdQ/hammers2.jpg"
+  },
+  {
+    original: "https://i.ibb.co/TgXkBpF/hammers3.jpg"
+  },
+  {
+    original: "https://i.ibb.co/RPKgfpd/hammers4.jpg"
+  },
+  {
+    original: "https://i.ibb.co/DzP1ysd/hammers5.jpg"
+  },
+  {
+    original: "https://i.ibb.co/hyMZc12/hammers6.jpg"
+  },
+];
 
 const HammerTime = () => {
 
@@ -80,7 +104,7 @@ const HammerTime = () => {
 
       <div className='formGalore'>
 
-        <FormControl id='addPad'>
+        <FormControl id='addPad' fullWidth>
         <InputLabel>Head</InputLabel>
         <Select
         sx={{width: '20vw'}}
@@ -96,7 +120,7 @@ const HammerTime = () => {
         </FormControl>
         <br></br>
 
-        <FormControl id='addPad'>
+        <FormControl id='addPad' fullWidth>
         <InputLabel>Faces</InputLabel>
         <Select
         sx={{width: '20vw'}}
@@ -112,7 +136,7 @@ const HammerTime = () => {
         </FormControl>
         <br></br>
 
-        <FormControl id='addPad'>
+        <FormControl id='addPad' fullWidth>
         <InputLabel>Shaft</InputLabel>
         <Select
         sx={{width: '20vw'}}
@@ -128,7 +152,7 @@ const HammerTime = () => {
         </FormControl>
         <br></br>
 
-        <FormControl id='addPad'>
+        <FormControl id='addPad' fullWidth>
         <InputLabel>Grip</InputLabel>
         <Select
         sx={{width: '20vw'}}
@@ -144,7 +168,7 @@ const HammerTime = () => {
         </FormControl>
         <br></br>
 
-        <FormControl id='addPad'>
+        <FormControl id='addPad' fullWidth>
         <InputLabel>Pommel</InputLabel>
         <Select 
         sx={{width: '20vw'}} 
@@ -166,8 +190,11 @@ const HammerTime = () => {
     </div>
 
     <p>**The Standard is a Silver Head and Faces, Brown Shaft, Black Grip, Silver Pommel**</p>
-        
+    
+    
+    <ImageGallery items={images} />
     </Container>
+    
     </>
   )
 
