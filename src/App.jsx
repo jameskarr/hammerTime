@@ -58,7 +58,7 @@ const images = [
   {
     original: "https://i.ibb.co/hyMZc12/hammers6.jpg"
   },
-];
+]
 
 const HammerTime = () => {
 
@@ -102,12 +102,12 @@ const HammerTime = () => {
         </div>
       </div>      
 
-      <div className='formGalore'>
+      <div className='formGalore' >
 
         <FormControl id='addPad' fullWidth>
         <InputLabel>Head</InputLabel>
         <Select
-        sx={{width: '20vw'}}
+        sx={{width: '30vw'}}
         label="Head"
         value={headColor}
         onChange={handleColorChange(setHeadColor)}>
@@ -123,7 +123,7 @@ const HammerTime = () => {
         <FormControl id='addPad' fullWidth>
         <InputLabel>Faces</InputLabel>
         <Select
-        sx={{width: '20vw'}}
+        sx={{width: '30vw'}}
         label="Faces"
         value={cupsColor}
         onChange={handleColorChange(setCupsColor)}>
@@ -139,7 +139,7 @@ const HammerTime = () => {
         <FormControl id='addPad' fullWidth>
         <InputLabel>Shaft</InputLabel>
         <Select
-        sx={{width: '20vw'}}
+        sx={{width: '30vw'}}
         label="Shaft"
         value={shaftColor}
         onChange={handleColorChange(setShaftColor)}>
@@ -155,7 +155,7 @@ const HammerTime = () => {
         <FormControl id='addPad' fullWidth>
         <InputLabel>Grip</InputLabel>
         <Select
-        sx={{width: '20vw'}}
+        sx={{width: '30vw'}}
         label="Grip"
         value={gripColor}
         onChange={handleColorChange(setGripColor)}>
@@ -171,7 +171,7 @@ const HammerTime = () => {
         <FormControl id='addPad' fullWidth>
         <InputLabel>Pommel</InputLabel>
         <Select 
-        sx={{width: '20vw'}} 
+        sx={{width: '30vw'}} 
         label="Pommel" 
         value={pommelColor} 
         onChange={handleColorChange(setPommelColor)}>
