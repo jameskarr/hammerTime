@@ -1,7 +1,7 @@
 //npm start
 import './App.css'
 import { useState } from 'react'
-import {CssBaseline, Container, Button, MenuItem, FormControl, InputLabel, Select} from '@mui/material'
+import { CssBaseline, Container, Button, MenuItem, FormControl, InputLabel, Select } from '@mui/material'
 import ImageGallery from 'react-image-gallery'
 import 'react-image-gallery/styles/css/image-gallery.css'
 
@@ -12,20 +12,20 @@ const colorOptions = [
   { name: "Black", value: "#000000" },
   { name: "Black Silk", value: "#46494A" },
   { name: "Blue", value: "#0000FF" },
-  { name: "Blue Silk", value: "#488AC7" },
+  { name: "Blue Silk", value: "#3d94c6" },
   { name: "Bone (tan/natural)", value: "#e3dac9" },
   { name: "Brown", value: "#964B00" },
   { name: "Copper", value: "#c85f39" },
   { name: "Gold", value: "#b99832" },
-  { name: "Grey", value: "#B9B5AB" },
+  { name: "Grey", value: "#828081" },
   { name: "Magenta", value: "#922341" },
   { name: "Marble", value: "#F0E9D6" },
   { name: "Merlot", value: "#7F171F" },
   { name: "Olive/Army Green", value: "#655f2e" },
   { name: "Orange", value: "#ff5508" },
   { name: "Pink", value: "#FFC0CB" },
-  { name: "Pink Silk", value: "#FFCBD6" },
-  { name: "Purple", value: "#800080" },
+  { name: "Pink Silk", value: "#c95e88" },
+  { name: "Purple", value: "#583673" },
   { name: "Red", value: "#ff0000" },
   { name: "Silver", value: "#c0c0c0" },
   { name: "White", value: "#FFFFFF" },
@@ -34,24 +34,12 @@ const colorOptions = [
 
 
 const images = [
-  {
-    original: "https://i.ibb.co/K2SRrTh/hammers1.jpg"
-  },
-  {
-    original: "https://i.ibb.co/NSyJDdQ/hammers2.jpg"
-  },
-  {
-    original: "https://i.ibb.co/TgXkBpF/hammers3.jpg"
-  },
-  {
-    original: "https://i.ibb.co/RPKgfpd/hammers4.jpg"
-  },
-  {
-    original: "https://i.ibb.co/DzP1ysd/hammers5.jpg"
-  },
-  {
-    original: "https://i.ibb.co/hyMZc12/hammers6.jpg"
-  },
+  { original: "https://i.ibb.co/K2SRrTh/hammers1.jpg" },
+  { original: "https://i.ibb.co/NSyJDdQ/hammers2.jpg" },
+  { original: "https://i.ibb.co/TgXkBpF/hammers3.jpg" },
+  { original: "https://i.ibb.co/RPKgfpd/hammers4.jpg" },
+  { original: "https://i.ibb.co/DzP1ysd/hammers5.jpg" },
+  { original: "https://i.ibb.co/hyMZc12/hammers6.jpg" },
 ]
 
 const ColorSelector = ({ label, color, setColor }) => (
