@@ -81,6 +81,8 @@ const HammerTime = () => {
 
     <a href='https://www.etsy.com/listing/977244025/hammer-dice-tower-and-vault-dice-storage'><img className='logo' src='tojo.png' alt='togo logo'></img></a>
 
+    <p>**The Standard is a Silver Head and Faces, Brown Shaft, Black Grip, Silver Pommel**</p>
+
     <div className='bigBox'>
 
       <div className='theHammer'>
@@ -109,8 +111,8 @@ const HammerTime = () => {
       </div>
 
     </div>
-
-    <p>**The Standard is a Silver Head and Faces, Brown Shaft, Black Grip, Silver Pommel**</p>
+    
+    <br></br>
     
     <ImageGallery items={images} />
     </Container>
