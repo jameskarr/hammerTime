@@ -59,6 +59,17 @@ const ColorSelector = ({ label, color, setColor }) => (
 )
 
 const HammerTime = () => {
+  // const initialColors = {
+  //   head: '',
+  //   cups: '',
+  //   shaft: '',
+  //   grip: '',
+  //   pommel: ''
+  // }
+
+  // const [colors, setColors] = useState(initialColors)
+  // const resetColors = () => setColors(initialColors)
+
   
   const [headColor, setHeadColor] = useState('')
   const [cupsColor, setCupsColor] = useState('')
