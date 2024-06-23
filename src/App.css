@@ -1,6 +1,14 @@
 * {
   box-sizing: border-box;
 }
+
+.roboto-mono-text {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
 body {
   font-family: sans-serif;
 }
@@ -14,8 +22,6 @@ body {
 }
 .bigBox {
   display: flex;
-}
-.theHammer {
 }
 .upperHammer {
   display: flex;
@@ -59,12 +65,10 @@ body {
   border-radius: 0 0 15% 15%;
   background-color: #c0c0c0;
 }
-.formGalore {
+/* ImageGallery component */
+.image-gallery-image {
+  padding: 1%;
 }
-.addThis {
-  width: 300px;
-}
-
 @media all and (max-width:992px) {
   .cups {
     height: 108px;

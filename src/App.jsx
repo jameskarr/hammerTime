@@ -32,7 +32,6 @@ const colorOptions = [
   { name: "Yellow", value: "#f7d800" }
 ]
 
-
 const images = [
   { original: "https://i.ibb.co/K2SRrTh/hammers1.jpg" },
   { original: "https://i.ibb.co/NSyJDdQ/hammers2.jpg" },
@@ -92,7 +91,7 @@ const HammerTime = () => {
 
     <a href='https://www.etsy.com/listing/977244025/hammer-dice-tower-and-vault-dice-storage'><img className='logo' src='tojo.png' alt='togo logo'></img></a>
 
-    <p>**The Standard is a Silver Head and Faces, Brown Shaft, Black Grip, Silver Pommel**</p>
+    <p className='roboto-mono-text'>Time to pick your colors!<br></br>**The Standard is a Silver Head and Faces, Brown Shaft, Black Grip, Silver Pommel**</p>
 
     <div className='bigBox'>
 
